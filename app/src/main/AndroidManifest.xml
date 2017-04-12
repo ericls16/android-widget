@@ -20,6 +20,7 @@
         </activity>
         <activity
             android:name=".ConstraintLayoutActivity"
+            android:label="constraint layout"
             android:configChanges="keyboardHidden|screenSize|orientation"
             android:screenOrientation="portrait" />
     </application>
