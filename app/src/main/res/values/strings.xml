@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Android-Widget</string>
+
+    <!--RecyclerView-->
+    <string name="rv_main">RecyclerView</string>
+    <string name="rv_list">rv_list</string>
+    <string name="rv_list_all">rv_list_all</string>
+    <string name="rv_grid">rv_grid</string>
+    <string name="rv_grid_all">rv_grid_all</string>
+    <string name="rv_item_line">rv_item_line</string>
 </resources>

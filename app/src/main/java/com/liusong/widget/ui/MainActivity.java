@@ -1,4 +1,4 @@
-package com.liusong.widget;
+package com.liusong.widget.ui;
 
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
@@ -6,7 +6,9 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import com.liusong.widget.R;
 import com.liusong.widget.databinding.ActivityMainBinding;
+import com.liusong.widget.ui.recyclerview.RvMainActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private ActivityMainBinding mBinding;
@@ -22,6 +24,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId()){
             case R.id.btn_constraint_layout:
                 startActivity(new Intent(this,ConstraintLayoutActivity.class));
+                break;
+            case R.id.btn_rv_main:
+                startActivity(new Intent(this,RvMainActivity.class));
                 break;
             default:
                 break;

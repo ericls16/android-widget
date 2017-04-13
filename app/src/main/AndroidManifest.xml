@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:configChanges="keyboardHidden|screenSize|orientation"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -19,9 +19,40 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ConstraintLayoutActivity"
-            android:label="constraint layout"
+            android:name=".ui.ConstraintLayoutActivity"
             android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="constraint layout"
+            android:screenOrientation="portrait" />
+        <!--RecyclerView-->
+        <activity
+            android:name=".ui.recyclerview.RvMainActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/rv_main"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.recyclerview.RvListActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/rv_list"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.recyclerview.RvListAllActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/rv_list_all"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.recyclerview.RvGridActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/rv_grid"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.recyclerview.RvGridAllActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/rv_grid_all"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.recyclerview.RvItemLineActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:label="@string/rv_item_line"
             android:screenOrientation="portrait" />
     </application>
 

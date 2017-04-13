@@ -1,4 +1,4 @@
-package com.liusong.widget;
+package com.liusong.widget.ui;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
@@ -6,6 +6,7 @@ import android.support.annotation.Nullable;
 import android.support.constraint.ConstraintSet;
 import android.support.v7.app.AppCompatActivity;
 
+import com.liusong.widget.R;
 import com.liusong.widget.databinding.ActivityConstraintLayoutBinding;
 
 /**
