@@ -42,6 +42,6 @@
         android:layout_height="wrap_content"
         android:textAllCaps="false"
         android:onClick="onClick"
-        android:text="item_line"/>
+        android:text="通用分割线"/>
 
 </LinearLayout>
