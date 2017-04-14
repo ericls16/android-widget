@@ -19,13 +19,13 @@ import java.util.List;
  * Created by liusong on 2016/10/18.
  */
 
-public class RvGridAllActivity extends AppCompatActivity {
+public class RvGridDividerAllActivity extends AppCompatActivity {
     private RecyclerView mRecyclerView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rv_grid_all);
+        setContentView(R.layout.activity_rv_grid_divider_all);
         initView();
         initData();
     }

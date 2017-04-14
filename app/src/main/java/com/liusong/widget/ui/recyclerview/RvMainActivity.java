@@ -28,13 +28,13 @@ public class RvMainActivity extends AppCompatActivity implements View.OnClickLis
                 startActivity(new Intent(this,RvListActivity.class));
                 break;
             case R.id.btn_list_all:
-                startActivity(new Intent(this,RvListAllActivity.class));
+                startActivity(new Intent(this,RvListDividerAllActivity.class));
                 break;
             case R.id.btn_grid:
                 startActivity(new Intent(this,RvGridActivity.class));
                 break;
             case R.id.btn_grid_all:
-                startActivity(new Intent(this,RvGridAllActivity.class));
+                startActivity(new Intent(this,RvGridDividerAllActivity.class));
                 break;
             case R.id.btn_divider:
                 startActivity(new Intent(this,RvDividerActivity.class));
