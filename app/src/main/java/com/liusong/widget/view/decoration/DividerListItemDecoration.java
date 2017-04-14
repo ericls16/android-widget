@@ -11,10 +11,9 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 /**
- * recyclerview的分割线:
+ * recyclerview的分割线: 四周无分割线
  * 注：适用于ListView样式
- * 注：不能给GridView样式的布局同时设置横竖分割线
- * Created by VIC1 on 2016/10/10.
+ * Created by liusong on 2016/10/10.
  */
 
 public class DividerListItemDecoration extends RecyclerView.ItemDecoration {
@@ -66,7 +65,8 @@ public class DividerListItemDecoration extends RecyclerView.ItemDecoration {
         final int right = parent.getWidth() - parent.getPaddingRight();
 
         final int childCount = parent.getChildCount();
-        for (int i = 0; i < childCount; i++) {
+        //控制垂直方向最后一行没有分割线
+        for (int i = 0; i < childCount - 1; i++) {
             final View child = parent.getChildAt(i);
             final RecyclerView.LayoutParams params = (RecyclerView.LayoutParams) child.getLayoutParams();
             final int top = child.getBottom() + params.bottomMargin + Math.round(ViewCompat.getTranslationY(child));
@@ -81,7 +81,8 @@ public class DividerListItemDecoration extends RecyclerView.ItemDecoration {
         final int bottom = parent.getHeight() - parent.getPaddingBottom();
 
         final int childCount = parent.getChildCount();
-        for (int i = 0; i < childCount; i++) {
+        //控制水平方向最后一列没有分割线
+        for (int i = 0; i < childCount - 1; i++) {
             final View child = parent.getChildAt(i);
             final RecyclerView.LayoutParams params = (RecyclerView.LayoutParams) child.getLayoutParams();
             final int left = child.getRight() + params.rightMargin + Math.round(ViewCompat.getTranslationX(child));

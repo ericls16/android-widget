@@ -15,10 +15,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * RecyclerView
- * 1> 网格样式布局，四周加上分割线包裹
- *
- * Created by VIC1 on 2016/10/18.
+ * 展示：RecyclerView网格样式，四周有分割线。
+ * Created by liusong on 2016/10/18.
  */
 
 public class RvGridAllActivity extends AppCompatActivity {

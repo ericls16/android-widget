@@ -15,7 +15,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by VIC1 on 2016/10/19.
+ * 展示：RecyclerView垂直列表，四周都有分割线
+ * Created by liusong on 2016/10/19.
  */
 
 public class RvListAllActivity extends AppCompatActivity {

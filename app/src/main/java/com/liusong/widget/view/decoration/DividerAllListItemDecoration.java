@@ -11,7 +11,7 @@ import android.view.View;
 /**
  * recyclerview的分割线:
  * 注：适用于ListView样式，四周都有分割线
- * Created by VIC1 on 2016/10/19.
+ * Created by liusong on 2016/10/19.
  */
 
 public class DividerAllListItemDecoration extends RecyclerView.ItemDecoration {
@@ -27,13 +27,13 @@ public class DividerAllListItemDecoration extends RecyclerView.ItemDecoration {
 
     @Override
     public void onDraw(Canvas c, RecyclerView parent, RecyclerView.State state) {
-            drawVertical(c, parent);
-            drawHorizontal(c, parent);
+        drawVertical(c, parent);
+        drawHorizontal(c, parent);
     }
 
     @Override
     public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
-            outRect.set(0, 0, mDivider.getIntrinsicWidth(), mDivider.getIntrinsicHeight());
+        outRect.set(0, 0, mDivider.getIntrinsicWidth(), mDivider.getIntrinsicHeight());
     }
 
     public void drawVertical(Canvas c, RecyclerView parent) {
@@ -42,8 +42,8 @@ public class DividerAllListItemDecoration extends RecyclerView.ItemDecoration {
         for (int i = 0; i < childCount; i++) {
             final View child = parent.getChildAt(i);
             final RecyclerView.LayoutParams params = (RecyclerView.LayoutParams) child.getLayoutParams();
-            final int top = child.getTop()-params.topMargin;
-            final int bottom =child.getBottom()+params.bottomMargin;
+            final int top = child.getTop() - params.topMargin;
+            final int bottom = child.getBottom() + params.bottomMargin;
 
             int left = 0;
             int right = 0;
@@ -53,8 +53,8 @@ public class DividerAllListItemDecoration extends RecyclerView.ItemDecoration {
             mDivider.setBounds(left, top, right, bottom);
             mDivider.draw(c);
             //右侧垂直分割线
-            left = child.getRight()+params.rightMargin;
-            right = left+mDivider.getIntrinsicWidth();
+            left = child.getRight() + params.rightMargin;
+            right = left + mDivider.getIntrinsicWidth();
             mDivider.setBounds(left, top, right, bottom);
             mDivider.draw(c);
         }
@@ -69,24 +69,24 @@ public class DividerAllListItemDecoration extends RecyclerView.ItemDecoration {
             final int left = child.getLeft() + params.leftMargin;
             final int right = child.getRight() + params.rightMargin + mDivider.getIntrinsicWidth();
 
-            int top=0;
-            int bottom=0;
+            int top = 0;
+            int bottom = 0;
 
-            if(i==0){
+            if (i == 0) {
                 //上方垂直分割线
-                top=child.getTop()+params.topMargin;
-                bottom=top+mDivider.getIntrinsicHeight();
+                top = child.getTop() + params.topMargin;
+                bottom = top + mDivider.getIntrinsicHeight();
                 mDivider.setBounds(left, top, right, bottom);
                 mDivider.draw(c);
                 //下方垂直分割线
-                top=child.getBottom()+params.bottomMargin;
-                bottom=top+mDivider.getIntrinsicHeight();
+                top = child.getBottom() + params.bottomMargin;
+                bottom = top + mDivider.getIntrinsicHeight();
                 mDivider.setBounds(left, top, right, bottom);
                 mDivider.draw(c);
-            }else{
+            } else {
                 //下方垂直分割线
-                top=child.getBottom()+params.bottomMargin;
-                bottom=top+mDivider.getIntrinsicHeight();
+                top = child.getBottom() + params.bottomMargin;
+                bottom = top + mDivider.getIntrinsicHeight();
                 mDivider.setBounds(left, top, right, bottom);
                 mDivider.draw(c);
             }

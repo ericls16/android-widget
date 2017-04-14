@@ -18,9 +18,9 @@ import java.util.List;
 
 /**
  * RecyclerView
- * 1> LinearLayoutManager: 需要向左滑动才能看到下一列.
+ * 1> LinearLayoutManager: 列表样式，需要向左滑动才能看到下一列.
  * 2> GridLayoutManager: 网格样式，四周无分割线包裹.
- * Created by VIC1 on 2016/10/10.
+ * Created by liusong on 2016/10/10.
  */
 
 public class RvGridActivity extends AppCompatActivity {

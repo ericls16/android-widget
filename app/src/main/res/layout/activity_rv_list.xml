@@ -7,7 +7,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="垂直的线性列表，有分割线，点击效果，点击和长按事件"/>
+        android:text="展示：RecyclerView垂直列表样式，四周无分割线，有点击和长按事件"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view"

@@ -8,7 +8,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="水平->左侧滑动"/>
+        android:text="展示：RecyclerView网格样式，四周无分割线。列表样式：水平->左侧滑动"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_view_horizontal"

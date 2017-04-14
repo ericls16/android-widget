@@ -13,8 +13,8 @@ import android.util.Log;
 import android.view.View;
 
 /**
- * RecyclerView分割线
- * Created by VIC1 on 2016/10/19.
+ * RecyclerView分割线(？？？)
+ * Created by liusong on 2016/10/19.
  */
 
 public class RvDividerItemDecoration extends RecyclerView.ItemDecoration {
