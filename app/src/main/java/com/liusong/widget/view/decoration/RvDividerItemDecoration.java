@@ -17,7 +17,7 @@ import android.view.View;
  * Created by VIC1 on 2016/10/19.
  */
 
-public class RecyclerViewItemLine extends RecyclerView.ItemDecoration {
+public class RvDividerItemDecoration extends RecyclerView.ItemDecoration {
 
     /**分割线类型**/
     public static final int LIST = 1001; //默认分割线：有最下面，没有最上面、左侧和右侧.
@@ -34,7 +34,7 @@ public class RecyclerViewItemLine extends RecyclerView.ItemDecoration {
     private Drawable mDivider;
     private int mDividerType;
 
-    public RecyclerViewItemLine(Context context, int dividerType) {
+    public RvDividerItemDecoration(Context context, int dividerType) {
         final TypedArray a = context.obtainStyledAttributes(ATTRS);
         mDivider = a.getDrawable(0);
         a.recycle();

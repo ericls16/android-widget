@@ -10,7 +10,7 @@ import android.support.v7.widget.RecyclerView;
 
 import com.liusong.widget.R;
 import com.liusong.widget.adapter.RvSingleTextAdapter;
-import com.liusong.widget.view.decoration.RecyclerViewItemLine;
+import com.liusong.widget.view.decoration.RvDividerItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -35,14 +35,14 @@ public class RvDividerActivity extends AppCompatActivity {
         mListRecyclerView = (RecyclerView) findViewById(R.id.list);
         mListRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mListRecyclerView.setItemAnimator(new DefaultItemAnimator());
-//        mListRecyclerView.addItemDecoration(new RecyclerViewItemLine(this,RecyclerViewItemLine.LIST));
-        mListRecyclerView.addItemDecoration(new RecyclerViewItemLine(this,RecyclerViewItemLine.LIST_VERTICAL_ALL));
-//        mListRecyclerView.addItemDecoration(new RecyclerViewItemLine(this,RecyclerViewItemLine.LIST_ALL));
+//        mListRecyclerView.addItemDecoration(new RvDividerItemDecoration(this,RvDividerItemDecoration.LIST));
+        mListRecyclerView.addItemDecoration(new RvDividerItemDecoration(this, RvDividerItemDecoration.LIST_VERTICAL_ALL));
+//        mListRecyclerView.addItemDecoration(new RvDividerItemDecoration(this,RvDividerItemDecoration.LIST_ALL));
         //-------------------------------
         mGridRecyclerView = (RecyclerView) findViewById(R.id.grid);
         mGridRecyclerView.setLayoutManager(new GridLayoutManager(this,4));
         mGridRecyclerView.setItemAnimator(new DefaultItemAnimator());
-        mGridRecyclerView.addItemDecoration(new RecyclerViewItemLine(this,RecyclerViewItemLine.GRID));
+        mGridRecyclerView.addItemDecoration(new RvDividerItemDecoration(this, RvDividerItemDecoration.GRID));
     }
 
     private void initData() {
