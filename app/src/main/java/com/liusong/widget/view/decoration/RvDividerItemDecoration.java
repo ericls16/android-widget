@@ -26,10 +26,11 @@ public class RvDividerItemDecoration extends RecyclerView.ItemDecoration {
     public static final int DIVIDER_LIST_VERTICAL_BOTTOM = 0x02; //垂直列表分割线：有最下面，没有最上面、左侧和右侧.
     public static final int DIVIDER_LIST_VERTICAL_TOP_BOTTOM = 0x03; //垂直列表分割线：有最上面、最下面，没有左侧和右侧.
     public static final int DIVIDER_LIST_VERTICAL_AROUND = 0x04; //垂直列表分割线：四周都有.
+    public static final int DIVIDER_LIST_VERTICAL_LEFT_RIGHT = 0x05; //垂直列表分割线：有左侧和右侧,没有上面和下面.
     //水平网格分割线
-    public static final int DIVIDER_GRID = 0x05; //水平网格分割线：没有最上面、最下面、左侧和右侧.
-    public static final int DIVIDER_GRID_TOP_BOTTOM = 0x06; //水平网格分割线：有最上面和最下面，没有左侧和右侧.
-    public static final int DIVIDER_GRID_AROUND = 0x07; //水平网格分割线：四周都有.
+    public static final int DIVIDER_GRID = 0x11; //水平网格分割线：没有最上面、最下面、左侧和右侧.
+    public static final int DIVIDER_GRID_TOP_BOTTOM = 0x12; //水平网格分割线：有最上面和最下面，没有左侧和右侧.
+    public static final int DIVIDER_GRID_AROUND = 0x13; //水平网格分割线：四周都有.
 
     private static final int[] ATTRS = new int[]{
             android.R.attr.listDivider
