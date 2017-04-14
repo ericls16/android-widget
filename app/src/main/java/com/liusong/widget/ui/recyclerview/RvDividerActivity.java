@@ -9,7 +9,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.liusong.widget.R;
-import com.liusong.widget.adapter.RvGeneralAdapter;
+import com.liusong.widget.adapter.RvSingleTextAdapter;
 import com.liusong.widget.view.decoration.RecyclerViewItemLine;
 
 import java.util.ArrayList;
@@ -19,14 +19,14 @@ import java.util.List;
  * Created by VIC1 on 2016/10/19.
  */
 
-public class RvItemLineActivity extends AppCompatActivity {
+public class RvDividerActivity extends AppCompatActivity {
     private RecyclerView mListRecyclerView;
     private RecyclerView mGridRecyclerView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rv_item_line);
+        setContentView(R.layout.activity_rv_divider);
         initView();
         initData();
     }
@@ -50,7 +50,7 @@ public class RvItemLineActivity extends AppCompatActivity {
         for (int i = 'A'; i < 'z'; i++) {
             data.add("" + (char) i);
         }
-        RvGeneralAdapter adapter=new RvGeneralAdapter(data);
+        RvSingleTextAdapter adapter=new RvSingleTextAdapter(data);
         //-----------------------------------
         mListRecyclerView.setAdapter(adapter);
         mGridRecyclerView.setAdapter(adapter);

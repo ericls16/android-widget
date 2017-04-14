@@ -14,12 +14,12 @@ import android.view.View;
  * Created by VIC1 on 2016/10/19.
  */
 
-public class DividerListAllDecoration extends RecyclerView.ItemDecoration {
+public class DividerAllListItemDecoration extends RecyclerView.ItemDecoration {
 
     private static final int[] ATTRS = new int[]{android.R.attr.listDivider};
     private Drawable mDivider;
 
-    public DividerListAllDecoration(Context context) {
+    public DividerAllListItemDecoration(Context context) {
         final TypedArray a = context.obtainStyledAttributes(ATTRS);
         mDivider = a.getDrawable(0);
         a.recycle();

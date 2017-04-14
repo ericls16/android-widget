@@ -9,7 +9,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.liusong.widget.R;
-import com.liusong.widget.adapter.RvGeneralAdapter;
+import com.liusong.widget.adapter.RvSingleTextAdapter;
 import com.liusong.widget.view.decoration.DividerGridItemDecoration;
 import com.liusong.widget.view.decoration.DividerListItemDecoration;
 
@@ -63,7 +63,7 @@ public class RvGridActivity extends AppCompatActivity {
         for (int i = 'A'; i < 'z'; i++) {
             data.add("" + (char) i);
         }
-        RvGeneralAdapter adapter=new RvGeneralAdapter(data);
+        RvSingleTextAdapter adapter=new RvSingleTextAdapter(data);
         mRecyclerViewHorizontal.setAdapter(adapter);
         //style
         List<String> data2 = new ArrayList<String>();
@@ -71,7 +71,7 @@ public class RvGridActivity extends AppCompatActivity {
             data2.add("" + (char) i);
         }
         data2.add("X");
-        RvGeneralAdapter adapter2=new RvGeneralAdapter(data2);
+        RvSingleTextAdapter adapter2=new RvSingleTextAdapter(data2);
         mRecyclerView.setAdapter(adapter2);
     }
 }

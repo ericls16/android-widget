@@ -10,12 +10,12 @@ import android.view.View;
  * Created by VIC1 on 2016/10/10.
  */
 
-public class RecyclerTouchListener implements RecyclerView.OnItemTouchListener{
+public class RvItemTouchListener implements RecyclerView.OnItemTouchListener {
     private GestureDetector gestureDetector;
-    private ClickListener clickListener;
+    private OnClickEventListener onClickEventListener;
 
-    public RecyclerTouchListener(Context context, final RecyclerView recyclerView, final ClickListener clickListener) {
-        this.clickListener = clickListener;
+    public RvItemTouchListener(Context context, final RecyclerView recyclerView, final OnClickEventListener onClickEventListener) {
+        this.onClickEventListener = onClickEventListener;
 
         gestureDetector = new GestureDetector(context, new GestureDetector.SimpleOnGestureListener() {
             @Override
@@ -26,8 +26,8 @@ public class RecyclerTouchListener implements RecyclerView.OnItemTouchListener{
             @Override
             public void onLongPress(MotionEvent e) {
                 View child = recyclerView.findChildViewUnder(e.getX(), e.getY());
-                if (child != null && clickListener != null) {
-                    clickListener.onLongClick(child, recyclerView.getChildPosition(child));
+                if (child != null && onClickEventListener != null) {
+                    onClickEventListener.onLongClick(child, recyclerView.getChildPosition(child));
                 }
             }
         });
@@ -36,8 +36,8 @@ public class RecyclerTouchListener implements RecyclerView.OnItemTouchListener{
     @Override
     public boolean onInterceptTouchEvent(RecyclerView rv, MotionEvent e) {
         View child = rv.findChildViewUnder(e.getX(), e.getY());
-        if (child != null && clickListener != null && gestureDetector.onTouchEvent(e)) {
-            clickListener.onClick(child, rv.getChildPosition(child));
+        if (child != null && onClickEventListener != null && gestureDetector.onTouchEvent(e)) {
+            onClickEventListener.onClick(child, rv.getChildPosition(child));
         }
         return false;
     }
@@ -50,5 +50,11 @@ public class RecyclerTouchListener implements RecyclerView.OnItemTouchListener{
     @Override
     public void onRequestDisallowInterceptTouchEvent(boolean disallowIntercept) {
 
+    }
+
+    public interface OnClickEventListener {
+        void onClick(View view, int position);
+
+        void onLongClick(View view, int position);
     }
 }

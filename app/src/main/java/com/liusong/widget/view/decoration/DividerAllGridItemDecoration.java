@@ -18,13 +18,13 @@ import android.view.View;
  * Created by VIC1 on 2016/10/18.
  */
 
-public class DividerGridAllDecoration extends RecyclerView.ItemDecoration {
+public class DividerAllGridItemDecoration extends RecyclerView.ItemDecoration {
 
     private static final int[] ATTRS = new int[]{android.R.attr.listDivider};
     private Drawable mDivider;
     private int columnNumber;
 
-    public DividerGridAllDecoration(Context context) {
+    public DividerAllGridItemDecoration(Context context) {
         final TypedArray a = context.obtainStyledAttributes(ATTRS);
         mDivider = a.getDrawable(0);
         a.recycle();

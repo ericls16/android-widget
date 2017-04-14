@@ -10,9 +10,8 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.liusong.widget.R;
-import com.liusong.widget.adapter.RvGeneralAdapter;
-import com.liusong.widget.listener.ClickListener;
-import com.liusong.widget.listener.RecyclerTouchListener;
+import com.liusong.widget.adapter.RvSingleTextAdapter;
+import com.liusong.widget.listener.RvItemTouchListener;
 import com.liusong.widget.view.decoration.DividerListItemDecoration;
 
 import java.util.ArrayList;
@@ -23,7 +22,7 @@ import java.util.List;
  * 1> 一般使用: ListView样式，四周无分割线包裹
  * 2> item的点击事件：两种实现方式.
  *
- * Created by VIC1 on 2016/10/10.
+ * Created by liusong on 2016/10/10.
  */
 
 public class RvListActivity extends AppCompatActivity {
@@ -51,7 +50,7 @@ public class RvListActivity extends AppCompatActivity {
 
     private void initListener() {
         //点击事件方法一：
-        mRecyclerView.addOnItemTouchListener(new RecyclerTouchListener(this, mRecyclerView, new ClickListener() {
+        mRecyclerView.addOnItemTouchListener(new RvItemTouchListener(this, mRecyclerView, new RvItemTouchListener.OnClickEventListener() {
             @Override
             public void onClick(View view, int position) {
                 Toast.makeText(RvListActivity.this,"click->"+position, Toast.LENGTH_SHORT).show();
@@ -69,10 +68,10 @@ public class RvListActivity extends AppCompatActivity {
         for (int i = 'A'; i < 'z'; i++) {
             data.add("" + (char) i);
         }
-        RvGeneralAdapter adapter=new RvGeneralAdapter(data);
+        RvSingleTextAdapter adapter=new RvSingleTextAdapter(data);
 
         //点击事件方法二：
-//        adapter.setOnItemClickListener(new RvGeneralAdapter.OnItemClickListener() {
+//        adapter.setOnItemClickListener(new RvSingleTextAdapter.OnItemClickListener() {
 //
 //            @Override
 //            public void onItemClick(View view, int position) {

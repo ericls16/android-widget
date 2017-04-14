@@ -8,8 +8,8 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.liusong.widget.R;
-import com.liusong.widget.adapter.RvGeneralAdapter;
-import com.liusong.widget.view.decoration.DividerListAllDecoration;
+import com.liusong.widget.adapter.RvSingleTextAdapter;
+import com.liusong.widget.view.decoration.DividerAllListItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -34,7 +34,7 @@ public class RvListAllActivity extends AppCompatActivity {
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mRecyclerView.setItemAnimator(new DefaultItemAnimator());
-        mRecyclerView.addItemDecoration(new DividerListAllDecoration(this));
+        mRecyclerView.addItemDecoration(new DividerAllListItemDecoration(this));
     }
 
     private void initData() {
@@ -42,7 +42,7 @@ public class RvListAllActivity extends AppCompatActivity {
         for (int i = 'A'; i < 'z'; i++) {
             data.add("" + (char) i);
         }
-        RvGeneralAdapter adapter=new RvGeneralAdapter(data);
+        RvSingleTextAdapter adapter=new RvSingleTextAdapter(data);
         mRecyclerView.setAdapter(adapter);
     }
 }

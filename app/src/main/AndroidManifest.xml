@@ -50,7 +50,7 @@
             android:label="@string/rv_grid_all"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.recyclerview.RvItemLineActivity"
+            android:name=".ui.recyclerview.RvDividerActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/rv_item_line"
             android:screenOrientation="portrait" />

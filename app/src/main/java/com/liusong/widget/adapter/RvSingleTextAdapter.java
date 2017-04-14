@@ -11,33 +11,21 @@ import com.liusong.widget.R;
 import java.util.List;
 
 /**
- * 包含点击事件的监听
- * Created by VIC1 on 2016/10/10.
+ * @description 固定item布局（只包含一个TextView），item有单击和长按监听.
+ * Created by liusong on 2016/10/10.
  */
-
-public class RvGeneralAdapter extends RecyclerView.Adapter<RvGeneralAdapter.MyViewHolder> {
+public class RvSingleTextAdapter extends RecyclerView.Adapter<RvSingleTextAdapter.MyViewHolder> {
 
     private List<String> data;
-
-    // item点击监听
-    public interface OnItemClickListener {
-        //单机事件
-        void onItemClick(View view, int position);
-        //长按事件
-        void onItemLongClick(View view, int position);
-    }
     private OnItemClickListener mOnItemClickListener;
-    public void setOnItemClickListener(OnItemClickListener mOnItemClickListener) {
-        this.mOnItemClickListener = mOnItemClickListener;
-    }
 
-    public RvGeneralAdapter(List<String> data) {
+    public RvSingleTextAdapter(List<String> data) {
         this.data = data;
     }
 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View itemView= LayoutInflater.from(parent.getContext()).inflate(R.layout.item_rv,parent,false);
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_rv, parent, false);
         return new MyViewHolder(itemView);
     }
 
@@ -73,10 +61,24 @@ public class RvGeneralAdapter extends RecyclerView.Adapter<RvGeneralAdapter.MyVi
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         private TextView mContent;
+
         public MyViewHolder(View itemView) {
             super(itemView);
-            mContent= (TextView) itemView.findViewById(R.id.content);
+            mContent = (TextView) itemView.findViewById(R.id.content);
         }
+    }
+
+    public void setOnItemClickListener(OnItemClickListener mOnItemClickListener) {
+        this.mOnItemClickListener = mOnItemClickListener;
+    }
+
+    //item点击监听接口
+    public interface OnItemClickListener {
+        //单击事件
+        void onItemClick(View view, int position);
+
+        //长按事件
+        void onItemLongClick(View view, int position);
     }
 
 }
