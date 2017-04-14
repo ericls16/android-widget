@@ -22,7 +22,7 @@ import java.util.List;
  * Created by liusong on 2016/10/10.
  */
 
-public class RvListActivity extends AppCompatActivity {
+public class RvDividerListItemActivity extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;
 
@@ -50,12 +50,12 @@ public class RvListActivity extends AppCompatActivity {
         mRecyclerView.addOnItemTouchListener(new RvItemTouchListener(this, mRecyclerView, new RvItemTouchListener.OnClickEventListener() {
             @Override
             public void onClick(View view, int position) {
-                Toast.makeText(RvListActivity.this,"click->"+position, Toast.LENGTH_SHORT).show();
+                Toast.makeText(RvDividerListItemActivity.this,"click->"+position, Toast.LENGTH_SHORT).show();
             }
 
             @Override
             public void onLongClick(View view, int position) {
-                Toast.makeText(RvListActivity.this,"longClick->"+position, Toast.LENGTH_SHORT).show();
+                Toast.makeText(RvDividerListItemActivity.this,"longClick->"+position, Toast.LENGTH_SHORT).show();
             }
         }));
     }
@@ -72,12 +72,12 @@ public class RvListActivity extends AppCompatActivity {
 //
 //            @Override
 //            public void onItemClick(View view, int position) {
-//                Toast.makeText(RvListActivity.this,"click->"+position,Toast.LENGTH_SHORT).show();
+//                Toast.makeText(RvDividerListItemActivity.this,"click->"+position,Toast.LENGTH_SHORT).show();
 //            }
 //
 //            @Override
 //            public void onItemLongClick(View view, int position) {
-//                Toast.makeText(RvListActivity.this,"longClick->"+position,Toast.LENGTH_SHORT).show();
+//                Toast.makeText(RvDividerListItemActivity.this,"longClick->"+position,Toast.LENGTH_SHORT).show();
 //            }
 //        });
 

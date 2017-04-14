@@ -30,22 +30,22 @@
             android:label="@string/rv_main"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.recyclerview.RvListActivity"
+            android:name=".ui.recyclerview.RvDividerListItemActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/rv_list"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.recyclerview.RvListDividerAllActivity"
+            android:name=".ui.recyclerview.RvDividerAllListItemActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/rv_list_all"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.recyclerview.RvGridActivity"
+            android:name=".ui.recyclerview.RvDividerGridItemActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/rv_grid"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.recyclerview.RvGridDividerAllActivity"
+            android:name=".ui.recyclerview.RvDividerAllGridItemActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/rv_grid_all"
             android:screenOrientation="portrait" />

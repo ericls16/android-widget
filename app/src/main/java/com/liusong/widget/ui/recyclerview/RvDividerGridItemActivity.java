@@ -23,7 +23,7 @@ import java.util.List;
  * Created by liusong on 2016/10/10.
  */
 
-public class RvGridActivity extends AppCompatActivity {
+public class RvDividerGridItemActivity extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;
     private RecyclerView mRecyclerViewHorizontal;
