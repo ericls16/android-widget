@@ -35,14 +35,14 @@ public class RvDividerActivity extends AppCompatActivity {
         mListRecyclerView = (RecyclerView) findViewById(R.id.list);
         mListRecyclerView.setLayoutManager(new LinearLayoutManager(this));
         mListRecyclerView.setItemAnimator(new DefaultItemAnimator());
-//        mListRecyclerView.addItemDecoration(new RvDividerItemDecoration(this,RvDividerItemDecoration.LIST));
-        mListRecyclerView.addItemDecoration(new RvDividerItemDecoration(this, RvDividerItemDecoration.LIST_VERTICAL_ALL));
-//        mListRecyclerView.addItemDecoration(new RvDividerItemDecoration(this,RvDividerItemDecoration.LIST_ALL));
+//        mListRecyclerView.addItemDecoration(new RvDividerItemDecoration(this,RvDividerItemDecoration.DIVIDER_LIST_VERTICAL_BOTTOM));
+        mListRecyclerView.addItemDecoration(new RvDividerItemDecoration(this, RvDividerItemDecoration.DIVIDER_LIST_VERTICAL_TOP_BOTTOM));
+//        mListRecyclerView.addItemDecoration(new RvDividerItemDecoration(this,RvDividerItemDecoration.DIVIDER_LIST_VERTICAL_AROUND));
         //-------------------------------
         mGridRecyclerView = (RecyclerView) findViewById(R.id.grid);
         mGridRecyclerView.setLayoutManager(new GridLayoutManager(this,4));
         mGridRecyclerView.setItemAnimator(new DefaultItemAnimator());
-        mGridRecyclerView.addItemDecoration(new RvDividerItemDecoration(this, RvDividerItemDecoration.GRID));
+        mGridRecyclerView.addItemDecoration(new RvDividerItemDecoration(this, RvDividerItemDecoration.DIVIDER_GRID));
     }
 
     private void initData() {
