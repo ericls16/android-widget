@@ -25,7 +25,7 @@ public class RvSingleTextAdapter extends RecyclerView.Adapter<RvSingleTextAdapte
 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_rv, parent, false);
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_rv_single_text, parent, false);
         return new MyViewHolder(itemView);
     }
 
