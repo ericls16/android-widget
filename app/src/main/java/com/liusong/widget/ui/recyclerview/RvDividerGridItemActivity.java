@@ -31,7 +31,7 @@ public class RvDividerGridItemActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rv_grid);
+        setContentView(R.layout.activity_rv_divider_grid_item);
         initView();
         initListener();
         initData();
