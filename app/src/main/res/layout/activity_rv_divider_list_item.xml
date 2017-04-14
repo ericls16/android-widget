@@ -7,6 +7,16 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="展示：RecyclerView垂直列表水平显示样式"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="展示：RecyclerView垂直列表样式，四周无分割线，有点击和长按事件"/>
 
     <android.support.v7.widget.RecyclerView

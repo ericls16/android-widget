@@ -18,13 +18,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 展示：RecyclerView垂直列表样式，四周无分割线，有点击和长按事件
+ * 展示：
+ * RecyclerView垂直列表样式，四周无分割线，有点击和长按事件
+ * LinearLayoutManager: 列表水平显示样式，需要向左滑动才能看到下一列.
  * Created by liusong on 2016/10/10.
  */
 
 public class RvDividerListItemActivity extends AppCompatActivity {
 
     private RecyclerView mRecyclerView;
+    private RecyclerView mRecyclerViewHorizontal;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -36,6 +39,18 @@ public class RvDividerListItemActivity extends AppCompatActivity {
     }
 
     private void initView() {
+        //1.水平RecyclerView
+        mRecyclerViewHorizontal= (RecyclerView) findViewById(R.id.recycler_view_horizontal);
+        //设置布局管理器
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this);
+        linearLayoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
+        mRecyclerViewHorizontal.setLayoutManager(linearLayoutManager);
+        //设置item增加或移除动画
+        mRecyclerViewHorizontal.setItemAnimator(new DefaultItemAnimator());
+        //设置自定义分割线
+        mRecyclerViewHorizontal.addItemDecoration(new DividerListItemDecoration(this, DividerListItemDecoration.HORIZONTAL_LIST));
+
+        //--------------------------------------------------------
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         //设置布局管理器
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
@@ -61,6 +76,14 @@ public class RvDividerListItemActivity extends AppCompatActivity {
     }
 
     private void initData() {
+        //水平RecyclerView
+        List<String> dataX = new ArrayList<String>();
+        for (int i = 'A'; i < 'z'; i++) {
+            dataX.add("" + (char) i);
+        }
+        RvSingleTextAdapter adapterX=new RvSingleTextAdapter(dataX);
+        mRecyclerViewHorizontal.setAdapter(adapterX);
+        //-------------------------------------------
         List<String> data = new ArrayList<String>();
         for (int i = 'A'; i < 'z'; i++) {
             data.add("" + (char) i);
