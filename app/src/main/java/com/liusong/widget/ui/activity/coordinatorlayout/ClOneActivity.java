@@ -18,6 +18,6 @@ public class ClOneActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mBinding = DataBindingUtil.setContentView(this, R.layout.activity_cl_one);
+        mBinding= DataBindingUtil.setContentView(this, R.layout.activity_cl_one);
     }
 }

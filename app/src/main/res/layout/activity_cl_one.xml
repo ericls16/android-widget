@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <LinearLayout
+    <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
         <Button
-            android:id="@+id/btn_one"
-            android:layout_width="match_parent"
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:onClick="onClick"
-            android:text="one"
-            android:textAllCaps="false" />
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="300dp"
+            android:background="#FFCC00"
+            android:text="Hello"
+            app:layout_behavior="com.liusong.widget.view.behavior.DragBehavior" />
 
-    </LinearLayout>
+        <com.liusong.widget.view.behavior.DragView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="300dp"
+            android:background="#3366CC"
+            android:tag="10" />
+    </android.support.design.widget.CoordinatorLayout>
 </layout>
+
+
+
