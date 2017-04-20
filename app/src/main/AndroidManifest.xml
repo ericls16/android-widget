@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".ui.MainActivity"
+            android:name=".ui.activity.MainActivity"
             android:configChanges="keyboardHidden|screenSize|orientation"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -19,38 +19,38 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".ui.ConstraintLayoutActivity"
+            android:name=".ui.activity.ConstraintLayoutActivity"
             android:configChanges="keyboardHidden|screenSize|orientation"
             android:label="constraint layout"
             android:screenOrientation="portrait" />
         <!--RecyclerView-->
         <activity
-            android:name=".ui.recyclerview.RvMainActivity"
+            android:name=".ui.activity.recyclerview.RvMainActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/rv_main"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.recyclerview.RvDividerListItemActivity"
+            android:name=".ui.activity.recyclerview.RvDividerListItemActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/rv_list"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.recyclerview.RvDividerAllListItemActivity"
+            android:name=".ui.activity.recyclerview.RvDividerAllListItemActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/rv_list_all"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.recyclerview.RvDividerGridItemActivity"
+            android:name=".ui.activity.recyclerview.RvDividerGridItemActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/rv_grid"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.recyclerview.RvDividerAllGridItemActivity"
+            android:name=".ui.activity.recyclerview.RvDividerAllGridItemActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/rv_grid_all"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".ui.recyclerview.RvDividerActivity"
+            android:name=".ui.activity.recyclerview.RvDividerActivity"
             android:configChanges="keyboardHidden|orientation|screenSize"
             android:label="@string/rv_item_line"
             android:screenOrientation="portrait" />

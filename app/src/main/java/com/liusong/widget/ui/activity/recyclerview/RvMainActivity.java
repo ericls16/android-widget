@@ -1,4 +1,4 @@
-package com.liusong.widget.ui.recyclerview;
+package com.liusong.widget.ui.activity.recyclerview;
 
 import android.content.Intent;
 import android.os.Bundle;

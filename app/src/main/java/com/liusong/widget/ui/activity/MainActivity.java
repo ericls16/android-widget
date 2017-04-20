@@ -1,4 +1,4 @@
-package com.liusong.widget.ui;
+package com.liusong.widget.ui.activity;
 
 import android.content.Intent;
 import android.databinding.DataBindingUtil;
@@ -8,7 +8,7 @@ import android.view.View;
 
 import com.liusong.widget.R;
 import com.liusong.widget.databinding.ActivityMainBinding;
-import com.liusong.widget.ui.recyclerview.RvMainActivity;
+import com.liusong.widget.ui.activity.recyclerview.RvMainActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
     private ActivityMainBinding mBinding;

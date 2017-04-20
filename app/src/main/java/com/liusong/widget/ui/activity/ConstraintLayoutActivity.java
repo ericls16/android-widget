@@ -1,4 +1,4 @@
-package com.liusong.widget.ui;
+package com.liusong.widget.ui.activity;
 
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
