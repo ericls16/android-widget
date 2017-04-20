@@ -9,7 +9,7 @@ import android.view.View;
 
 /**
  * 可拖拽view
- * Created by HuaChao on 2016/6/1.
+ * Created by liusong on 2016/6/1.
  */
 public class DragView extends View {
     private int lastX;

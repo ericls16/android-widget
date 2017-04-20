@@ -9,7 +9,7 @@ import android.widget.Button;
 
 /**
  * 拖拽行为
- * Created by HuaChao on 2016/6/1.
+ * Created by liusong on 2016/6/1.
  */
 public class DragBehavior extends CoordinatorLayout.Behavior<Button> {
     private int width;
