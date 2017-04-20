@@ -18,6 +18,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!--CoordinatorLayout-->
+        <activity
+            android:name=".ui.activity.coordinatorlayout.ClMainActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="CoordinatorLayout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.coordinatorlayout.ClOneActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="One"
+            android:screenOrientation="portrait" />
+        <!--ConstraintLayout-->
         <activity
             android:name=".ui.activity.ConstraintLayoutActivity"
             android:configChanges="keyboardHidden|screenSize|orientation"

@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.liusong.widget.R;
 import com.liusong.widget.databinding.ActivityMainBinding;
+import com.liusong.widget.ui.activity.coordinatorlayout.ClMainActivity;
 import com.liusong.widget.ui.activity.recyclerview.RvMainActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -22,6 +23,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()){
+            case R.id.btn_coordinator_layout:
+                startActivity(new Intent(this,ClMainActivity.class));
+                break;
             case R.id.btn_constraint_layout:
                 startActivity(new Intent(this,ConstraintLayoutActivity.class));
                 break;
