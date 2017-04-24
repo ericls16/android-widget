@@ -21,8 +21,7 @@
             android:layout_height="100dp"
             android:layout_marginLeft="300dp"
             android:layout_marginTop="300dp"
-            android:background="#3366CC"
-            android:tag="10" />
+            android:background="#3366CC"/>
     </android.support.design.widget.CoordinatorLayout>
 </layout>
 
