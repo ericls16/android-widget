@@ -7,6 +7,8 @@ import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.Button;
 
+import com.liusong.widget.widget.DragView;
+
 /**
  * behavior:某个view监听另一个view的状态变化
  * 拖拽行为
