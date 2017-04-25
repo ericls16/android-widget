@@ -1,4 +1,4 @@
-package com.liusong.widget.view.decoration;
+package com.liusong.widget.widget.decoration;
 
 import android.content.Context;
 import android.content.res.TypedArray;

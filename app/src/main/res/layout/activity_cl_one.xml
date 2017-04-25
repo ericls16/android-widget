@@ -16,7 +16,7 @@
             android:text="Hello"
             app:layout_behavior="com.liusong.widget.view.behavior.DragBehavior" />
 
-        <com.liusong.widget.view.behavior.DragView
+        <com.liusong.widget.widget.behavior.DragView
             android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_marginLeft="300dp"

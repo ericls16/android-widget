@@ -1,4 +1,4 @@
-package com.liusong.widget.view.behavior;
+package com.liusong.widget.widget.behavior;
 
 import android.content.Context;
 import android.support.design.widget.CoordinatorLayout;

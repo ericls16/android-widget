@@ -12,7 +12,7 @@ import android.widget.Toast;
 import com.liusong.widget.R;
 import com.liusong.widget.adapter.RvSingleTextAdapter;
 import com.liusong.widget.listener.RvItemTouchListener;
-import com.liusong.widget.view.decoration.DividerListItemDecoration;
+import com.liusong.widget.widget.decoration.DividerListItemDecoration;
 
 import java.util.ArrayList;
 import java.util.List;
