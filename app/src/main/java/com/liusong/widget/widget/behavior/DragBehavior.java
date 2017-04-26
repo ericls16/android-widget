@@ -30,6 +30,7 @@ public class DragBehavior extends CoordinatorLayout.Behavior<Button> {
     public boolean layoutDependsOn(CoordinatorLayout parent, Button child, View dependency) {
         //如果dependency是TempView的实例，说明它就是我们所需要的Dependency
         return dependency instanceof DragView;
+
     }
 
     /**
