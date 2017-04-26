@@ -29,6 +29,9 @@ public class ClMainActivity extends AppCompatActivity implements View.OnClickLis
             case R.id.btn_one:
                 startActivity(new Intent(this,ClOneActivity.class));
                 break;
+            case R.id.btn_pull_hide:
+                startActivity(new Intent(this,BehaviorPullHideActivity.class));
+                break;
             default:
                 break;
         }

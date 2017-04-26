@@ -29,6 +29,11 @@
             android:configChanges="keyboardHidden|screenSize|orientation"
             android:label="One"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.activity.coordinatorlayout.BehaviorPullHideActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="BehaviorPullHide"
+            android:screenOrientation="portrait" />
         <!--ConstraintLayout-->
         <activity
             android:name=".ui.activity.ConstraintLayoutActivity"

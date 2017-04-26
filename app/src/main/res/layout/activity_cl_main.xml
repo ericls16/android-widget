@@ -14,5 +14,13 @@
             android:text="one"
             android:textAllCaps="false" />
 
+        <Button
+            android:id="@+id/btn_pull_hide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="BehaviorPullHide"
+            android:textAllCaps="false" />
+
     </LinearLayout>
 </layout>
