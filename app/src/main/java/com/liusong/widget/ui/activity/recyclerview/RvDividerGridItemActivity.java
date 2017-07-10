@@ -8,7 +8,7 @@ import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
 import com.liusong.widget.R;
-import com.liusong.widget.adapter.RvSingleTextAdapter;
+import com.liusong.widget.adapter.recyclerview.RvSingleTextAdapter;
 import com.liusong.widget.widget.decoration.DividerGridItemDecoration;
 
 import java.util.ArrayList;

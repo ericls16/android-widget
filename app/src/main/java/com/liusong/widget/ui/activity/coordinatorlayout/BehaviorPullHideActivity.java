@@ -7,7 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DividerItemDecoration;
 
 import com.liusong.widget.R;
-import com.liusong.widget.adapter.RvSingleTextAdapter;
+import com.liusong.widget.adapter.recyclerview.RvSingleTextAdapter;
 import com.liusong.widget.databinding.ActivityBehaviorPullHideBinding;
 
 import java.util.ArrayList;

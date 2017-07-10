@@ -1,4 +1,4 @@
-package com.liusong.widget.adapter;
+package com.liusong.widget.adapter.recyclerview;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
